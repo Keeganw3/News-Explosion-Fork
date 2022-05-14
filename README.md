@@ -1,108 +1,184 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# My Daily Scheduler
+## Project Description
+<p> My Daily Scheduler is a command line application to help you plan out what you would like to do in a day no matter what that may be!
 
-Welcome Keeganw3,
+The user can input all the activities they would like to do and the application will give them back to the user in a list for them to do as they please.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This project is a multiple choice quiz that is for people of all ages designed to test their trivia knowledge. The idea was based on the show from the 80s, Who Wants To Be a Millionaire. It focuses on general knowledge and contains questions that were asked in the show that scale with difficulty as the player gets through each question. This might encourage people to go back and look at the show to see how it became so well known.
+</p>
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# UX
+## User Stories
 
-## Gitpod Reminders
+## Strategy
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Scope
 
-`python3 -m http.server`
+## Structure
 
-A blue button should appear to click: _Make Public_,
+## Skeleton
+(Include wireframes and er diagrams. Could move this to design and make different sections.)
 
-Another blue button should appear to click: _Open Browser_.
+## Surface
+(Mention color scheme)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+# Features
+## Existing Features
+## Welcome Screen
+* The user is told what the program is and how to use it. After they hit enter it shows the main menu where the user is given all the options for what they can do with the daily planner in a straightforward and easy to read format.
 
-A blue button should appear to click: _Make Public_,
+![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
 
-Another blue button should appear to click: _Open Browser_.
+## Main Menu
+* The first 4 options are suggestions for their schedule and option 5 lets the user make their own option. The user can leave the program when they're on the menu by clicking 6.
+![Screenshot](/assets/screenshots/main_menu_screenshot.jpg)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* When an option is chosen and placed in the list it is displayed a line space away from the choices to give the user better readability. The user will always be shown their current list everytime a task has been added to it. 
+![Screenshot](/assets/screenshots/list_screenshot.jpg)
 
-To log into the Heroku toolbelt CLI:
+## Main Menu Validator
+* The user is asked to enter a number from 1-6. If they use a number outside of this range an error is displayed which asks the user to pick a number within this range.
+![Screenshot](/assets/screenshots/incorrect_num_screenshot.jpg)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* The user is given a similar response if they submit a letter instead of a number.
+![Screenshot](/assets/screenshots/incorrect_variable_screenshot.jpg)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+## User created options
+* The user can make their own options to be added into their list plans for the day. The user can do this as many times as they want and the input can be as long as they desire to give full flexibility to the user.
+![Screenshot](/assets/screenshots/create_options_screenshot.jpg)
+ 
+* The user can exit this screen by typing 'exit'. This will not affect the user's list and they will be returned to the main menu. This gives the user a chance to go back to the main menu if they didn't mean to come to this screen.
+![Screenshot](/assets/screenshots/exit_create_options_screenshot.jpg)
 
-------
+## Exiting Daily Planner
+* Once the list has 3 tasks in it, the user is prompted to exit the daily planner by hitting "y" or "n". If they enter another key the code will tell them they hit the wrong key and ask them to put in "y" or "n". "y" or "n" can be put in with spaces or as capital letters to give the user more flexibilty when using the app.
+![Screenshot](/assets/screenshots/exit_planner_screenshot.jpg)
 
-## Release History
+* If they hit "y", they will leave the planner. They will have to hit enter to get to the End Results screen.
+![Screenshot](/assets/screenshots/y_exit_planner_screenshot.jpg)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* If they hit "n" they can add another task and will be asked if they want to leave again every time they add a new task. They will have to hit enter once again to return to the main menu.
+![Screenshot](/assets/screenshots/n_exit_planner_screenshot.jpg)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## End Results Screen
+* This screen displays the full schedule that the user has made up for the day in a list so it is clearly visible and easy to find once you are done with the app.
+![Screenshot](/assets/screenshots/end_results_screenshot.jpg)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+# Future Features to be added 
+## Time Allotments
+* I would ike the user to be able to set these tasks to go on for a set amount of time to allow them to better plan out their day. They could also set a start and end time and try to work within these confines.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Improved UI of End Results Screen
+I would like the final display of the user's daily plan to be displayed one at a time on a line instead of all together in the list. I tried to make this a couple times but couldn't figure it out before submission.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+# Technologies Used
+* HTML - A mark-up language that uses semantic structures.
+* CSS - Cascade style sheets are used to style the quiz and website.
+* Javascript - Programming language used to make the quiz.
+* Gitpod - Used as a platform for writing code. The command line commits and pushes to GitHub.
+* GitHub - Hosts this repository.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Programs Used
+* lucid.app: used to create the flowchart for this project.
+screenshot()(detail?)
+* Git: used for creating the code for this project and sending it to GitHub.
+* GitHub: a repository for the code after being made in Git.
+* Heroku: used to deploy the application and hosts a page for the code.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Design
+* W3C HTML Validator - For cleaning and correcting HTML code.
+* CSS Validator - For cleaning and correcting CSS code.
+* JSHint - For cleaning and correcting Javascript code.
+* Google Chrome Dev Tools - Used for Lighthouse to check and improve the website's accessability.
+* WCAG Contrast Checker - For choosing accessible colours.
+* Grammerly - For checking spelling and grammer.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+# Testing
+## Validator Testing
+### HTML
+* No errors or warnings were found through W3C validator.
+### CSS
+* No errors or warnings were found through the W3C CSS validator and I was given the code for this icon to prove this.
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!"/>
+    </a>
+</p>
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Javascript
+* JSHint returned no errors although it gave warnings that score isn't defined in the results function. This was used instead of correct which is equal to the same object. score.innertext was used instead because calling the correct from the checkAnswer function didn't work.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Accessibility Testing
+This is a screenshot taken from doing an accessibility test on Developer Tools Lighthouse.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+![Screenshot](/assets/screenshots/accessibility-screenshot.png)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Manual Testing
+I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+For media queries, 768px, 500px, and below the text across the website is shrunk to maintain a clear structure on smaller screens and the logo was slightly adjusted. Media queries at sizes larger than this were only needed for the reset button to stay centred because the rest of the website was able to fill out the screen at these sizes well.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+When checking the app on mobile I noticed that the font size was too large for both the header and questions making it so the user would need to scroll right to see the full question. This was fixed by shrinking the size of the text by 10%.
 
-------
+## Usability Testing
+After I deployed this site I had friends and family test the usability of the website.
 
-## FAQ about the uptime script
+The first user asked to be able to see which question they were on. This was fixed by placing the question number in each question's text.
 
-**Why have you added this script?**
+Another user asked for a way to restart the quiz at any time while they're going through it. This was addressed by adding a reset button above the question to make it easy for the user to see.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+### What I think a user may have wanted:
+* A way to keep track of the number of correct answers - added a scoreboard
+* A way of knowing which button the user was on - added this by making buttons change colour when a mouse hovers over it.
+* A confirmation for when an answer for a question is chosen - added an alert that comes up for each question when an answer is clicked.
+* A way to view their results - added an alert at the top of the page telling them how well they did.
+* A way to contact the site owner if they discover a bug - added a footer with relevant contact information.
 
-**How will this affect me?**
+## Known Bugs
+When creating an option to be used the code will ask you for it twice. This doesn't happen if exit is used the first time the user is asked but if it is used when prompted the second time it will add this to the list. Using exit the first time won't add it to the list. I couldn't figure out why this problem happened.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+# Deployment
+This app was deployed using Heroku.
+* Log into Heroku and make an account.
+* In your gitpod code create a file called "requirements.txt" and add all of your code's dependencies to it.
+* Go back to Heroku and click create new app. This app must have a unique name and a region.
+* Now go to the Settings tab and scroll down to the Config Vars section. You will see two inputs called key and value.
+* For the first key put CREDS and paste the contents of creds.json into value. 
+* For the second key put PORT and "8000" into value.
+* Scroll furthur down on this tab to Buildpack. 
+* Click 'add Buildpack' and select Python. Do this again and select Node.js. Make sure Python is first and Node.js is second or it could affect your code.
+* Go to the Deploy tab and you will see the deployment method, click Github. Enter the name of your repository and you will be given a list of the closest names that resemble what you have typed, click the one you want for this app.
+* Scroll down to the Automatic Deploys section and click automatic deploy. This will make the app update to launch the latest cade that was pushed to Github everytime it is opened.
+* You can also use Manual Deploy if this is the final version of your code.  
+* Click Open App in the top right of the screen and the app should run.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Forking
+* Log into Github
+* Load up the required repository.
+* In the top right of the screen below the profile icon there is a fork button, click this.
+* The repository should now be copied onto your Github account.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Cloning
+* Log into Github and choose a repository.
+* Click on the green code button.
+* You will be given three ways to clone the code. If you're using https, click “Clone with https” and copy the link.
+* Open the terminal and type in the command "git clone" followed by a space and the copied url.
+* The repository will now be cloned onto the computer.
 
-**So….?**
+# Acknowledgements
+## Credits
+* My mentor Brian Macharia who supported me and provided me with both feedback and solutions to problems I faced while creating the website.
+* My lecturer Simen Daehlin helped me to better write my code to solve a couple of problems I had run into.
+* The people from Slack who answered my questions when I needed them to.
+* Code institute for the classes, sources, and tutors that they provided me.
+* The people at student support who tried to help me for several hours.
+* Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Content
+* The questions were taken from https://inews.co.uk/light-relief/quizzes/who-wants-to-be-a-millionaire-questions-quiz-jackpot-441100
 
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Media
+* Logo image came from https://www.google.com/url?sa=i&url=https%3A%2F%2Fstore.steampowered.com%2Fapp%2F1356240%2FWho_Wants_To_Be_A_Millionaire%2F&psig=AOvVaw2253bvTyPXLqaWtEODyEyK&ust=1640120680651000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJig1Oej8_QCFQAAAAAdAAAAABA2
