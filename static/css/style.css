@@ -1,3 +1,10 @@
+/* Main Page */
+
+header {
+    text-align: center;
+    font-size: 4rem;
+}
+
 body {
-    color: red;
+    color: gray
 }
