@@ -1,4 +1,4 @@
-/* Main Page */
+/* Home Page */
 
 header {
     text-align: center;
@@ -6,6 +6,10 @@ header {
 }
 
 /* Navbar */
+nav ul li {
+    list-style-type: none;
+    padding: 0;
+}
 
 body {
     color: gray
