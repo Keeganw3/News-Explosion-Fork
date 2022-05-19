@@ -6,14 +6,33 @@
 <div class="container-fluid">
     <div class="row card-group">
         {% for post in post_list %}
-        <div class="col-3 p-3 card-columns">
+        <div class="col-3 card-columns">
             <div> <img class="image-thumbnail card-image-top" src="https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000610/87432790-las-noticias-y-los-hechos-que-divulgan-el-logotipo-del-vector-compuso-usando-la-inscripci%C3%B3n-de-las-n.jpg" alt="The words world news are displayed with a microphone underneath and a globe for the 'o' in world."></div>
             <div><h3><a href="#" class="card-link card-title">{{ post.title }}</a></h3></div>
             <div class="card-text">{{ post.content }}</div>
             <div><p class="author">Author: {{ post.author }}</p></div>
         </div>
-        {% endfor %}
+        {% if forloop.counter|divisibleby:3 %}
+            </div>
+            <div class="row">
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
     </div>
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}    
 </div>
 {% csrf_token %}
 {% endblock %}
