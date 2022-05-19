@@ -4,11 +4,11 @@
 
 <header>Web Stories</header>
 <div class="container-fluid">
-    <div class="row">
+    <div class="row card-group">
         {% for post in post_list %}
         <div class="col-mr-4 card">
-            <div> <img class="image-thumbnail" src="https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000610/87432790-las-noticias-y-los-hechos-que-divulgan-el-logotipo-del-vector-compuso-usando-la-inscripci%C3%B3n-de-las-n.jpg"></div>
-            <div><h3><a href="#" class="card-link">{{ post.title }}</a></h3></div>
+            <div> <img class="image-thumbnail card-image-top" src="https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000610/87432790-las-noticias-y-los-hechos-que-divulgan-el-logotipo-del-vector-compuso-usando-la-inscripci%C3%B3n-de-las-n.jpg" alt="The words world news are displayed with a microphone underneath and a globe for the 'o' in world."></div>
+            <div><h3><a href="#" class="card-link card-title">{{ post.title }}</a></h3></div>
             <div><p class="author">Author: {{ post.author }}</p></div>
         </div>
         {% endfor %}
