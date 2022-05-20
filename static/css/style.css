@@ -1,25 +1,35 @@
-/* Home Page */
+/* home page */
 
 header {
     text-align: center;
     font-size: 4rem;
 }
 
+body {
+    color: gray;
+    background-color: white;
+}
+
 img {
     width: 30%
 }
 
-/* Navbar */
-nav ul li {
+/* navbar */
+.navbar {
+    background-color: gray;
+}
+
+ul li {
     list-style-type: none;
-    padding: 0;
+    margin-left: 20%;
 }
 
-body {
-    color: gray
+a {
+   text-decoration: none;
+   color: black;
 }
 
-/* Posts */
+/* post pages */
 .post-content {
     width: 100%;
 }
