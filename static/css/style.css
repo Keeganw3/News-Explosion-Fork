@@ -30,6 +30,11 @@ a {
    color: white;
 }
 
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
 /* post pages */
 
 .post-content {
