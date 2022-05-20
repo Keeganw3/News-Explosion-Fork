@@ -18,3 +18,8 @@ nav ul li {
 body {
     color: gray
 }
+
+/* Posts */
+.post-content {
+    width: 100%;
+}
