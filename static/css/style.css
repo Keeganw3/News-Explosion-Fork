@@ -5,6 +5,10 @@ header {
     font-size: 4rem;
 }
 
+/* .hero-image {
+    background: url("/media/images/hero_image.jpg") no repeat center center;
+} */
+
 body {
     color: white;
     background-color: #505050;
