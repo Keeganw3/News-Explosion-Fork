@@ -41,7 +41,10 @@ a:hover {
 
 /* post pages */
 
-
+.post-title {
+    font-size: 3rem;
+    text-align: center;
+}
 
 .post-content {
     width: 100%;
