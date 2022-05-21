@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 <div>Author: {{ post.author }}</div>
-<div class="post-image">
+<div class="post-image container-fluid">
     <img src="{{ post.featured_image }}">
 </div>
 <div class="post-content">{{ post.content|safe }}</div>
