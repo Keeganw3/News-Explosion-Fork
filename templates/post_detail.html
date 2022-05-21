@@ -3,7 +3,11 @@
 <div class="post-title">{{ post.title }}</div>
 <div>Author: {{ post.author }}</div>
 <div class="post-image container-fluid">
-    <img src="{{ post.featured_image.url }}">
+    {% if "placeholder" in post.featured_image.url %}
+        <img class="img-fluid" src="https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000610/87432790-las-noticias-y-los-hechos-que-divulgan-el-logotipo-del-vector-compuso-usando-la-inscripci%C3%B3n-de-las-n.jpg" alt="The words world news are displayed with a microphone underneath and a globe for the 'o' in world.">
+    {% else %}
+        <img class="img-fluid" src="{{ post.featured_image.url }}" alt="">
+    {% endif %}
 </div>
 <div class="post-content">{{ post.content|safe }}</div>
 {% endblock content %}
