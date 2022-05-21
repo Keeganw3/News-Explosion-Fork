@@ -9,7 +9,11 @@
     <div class="row card-group">
         {% for post in post_list %}
         <div class="col-3 card-columns posts">
-            <div> <img class="image-thumbnail card-image-top" src="https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000610/87432790-las-noticias-y-los-hechos-que-divulgan-el-logotipo-del-vector-compuso-usando-la-inscripci%C3%B3n-de-las-n.jpg" alt="The words world news are displayed with a microphone underneath and a globe for the 'o' in world."></div>
+            {% if post.featured_image.url == "placeholder" %}
+                <div> <img class="image-thumbnail card-image-top" src="https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000610/87432790-las-noticias-y-los-hechos-que-divulgan-el-logotipo-del-vector-compuso-usando-la-inscripci%C3%B3n-de-las-n.jpg" alt="The words world news are displayed with a microphone underneath and a globe for the 'o' in world."></div>
+            {% else %}
+                <div> <img class="image-thumbnail card-image-top" src="{{ post.featured_image.url }}" alt=""></div>
+            {% endif %}
             <div><h3><a href="{{ post.slug }}" class="card-link card-title" target="_blank">{{ post.title }}</a></h3></div>
             <div class="card-text">{{ post.content|safe }}</div>
             <div><p class="author">Author: {{ post.author }}</p></div>

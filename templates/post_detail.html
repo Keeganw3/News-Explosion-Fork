@@ -2,7 +2,7 @@
 
 <div>Author: {{ post.author }}</div>
 <div class="post-image container-fluid">
-    <img src="{{ post.featured_image }}">
+    <img src="{{ post.featured_image.url }}">
 </div>
 <div class="post-content">{{ post.content|safe }}</div>
 {% endblock content %}
