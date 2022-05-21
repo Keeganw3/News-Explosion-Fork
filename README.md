@@ -184,7 +184,15 @@ This app was deployed using Heroku.
 
 ## Content
 * The placeholder text and image used in Post 1 about Halo were taken from https://www.pcgamer.com/the-halo-tv-series-has-absolutely-no-vibes/
+* The placeholder text and image used in Post 2 about Dr Strange were taken from https://collider.com/doctor-strange-2-multiverse-of-madness-weekend-box-office-61-million/#:~:text=Doctor%20Strange%202%20opened%20to,Doctor%20Strange%20(%24232%20million).
+* The placeholder text and image used in Post 3 about Johnny Depp were taken from https://www.nbcnews.com/pop-culture/pop-culture-news/johnny-depp-amber-heard-defamation-trial-summary-timeline-rcna26136
+* The placeholder text and image used in Post 4 about covid affecting the elderly were taken from https://www.rte.ie/news/regional/2022/0520/1300146-ulster-covid/
+* The placeholder text and image used in Post 5 about stress and anxiety in healthcare workers were taken from https://www.irishtimes.com/news/health/rising-number-of-healthcare-professionals-experiencing-stress-anxiety-burnout-1.4883048
 
 ## Media
 * Placeholder image came from https://previews.123rf.com/images/sylverarts/sylverarts1710/sylverarts171000610/87432790-las-noticias-y-los-hechos-que-divulgan-el-logotipo-del-vector-compuso-usando-la-inscripci%C3%B3n-de-las-n.jpg
 * Post 1's image came from https://cdn.mos.cms.futurecdn.net/pGyDmdniqHURMK2tN3Kh56-970-80.jpg.webp
+* Post 2's image came from https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/05/doctor-strange-2-multiverse-of-madness-review-feature.jpg?q=50&fit=contain&w=1500&h=&dpr=1.5
+* Post 3's image came from https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/rockcms/2022-04/220427-johnny-depp-amber-heard-se-1207p-715327.jpg
+* Post 4's image came from https://img.rasset.ie/001bc448-800.jpg
+* Post 5's image came from https://www.irishtimes.com/polopoly_fs/1.4883047.1652971327!/image/image.jpg_gen/derivatives/box_620_330/image.jpg
