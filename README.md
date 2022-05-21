@@ -75,8 +75,13 @@ I would like the final display of the user's daily plan to be displayed one at a
 * HTML - A mark-up language that uses semantic structures.
 * CSS - Cascade style sheets are used to style the quiz and website.
 * Javascript - Programming language used to make the quiz.
+* Python - Programming language used to create the databases, models and views for this website.
 * Gitpod - Used as a platform for writing code. The command line commits and pushes to GitHub.
 * GitHub - Hosts this repository.
+* Heroku - Cloud platform used to run this application.
+* Flask - Used to make working with Python easier and faster.
+* Django - Used for importing frameworks that sped up making the website.
+* Cloudinary - Used to display the images used on the website indefinitely.
 
 ## Programs Used
 * lucid.app: used to create the flowchart for this project.
@@ -176,7 +181,6 @@ This app was deployed using Heroku.
 * Code institute for the classes, sources, and tutors that they provided me.
 * The people at student support who tried to help me for several hours.
 * Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
-
 
 ## Content
 * The placeholder text and image used in Post 1 about Halo were taken from https://www.pcgamer.com/the-halo-tv-series-has-absolutely-no-vibes/
