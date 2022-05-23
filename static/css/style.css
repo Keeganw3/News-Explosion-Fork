@@ -5,9 +5,11 @@ header {
     font-size: 4rem;
 }
 
-/* .hero-image {
-    background: url("/media/images/hero_image.jpg") no repeat center center;
-} */
+.hero-image {
+    background: url("/media/images/hero_image.jpg") no-repeat center center;
+    width: 100%;
+    height: auto;
+}
 
 body {
     color: white;
