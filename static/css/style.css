@@ -6,9 +6,9 @@ header {
 }
 
 .hero-image {
-    background: url("static/images/hero_image.jpg") no-repeat center center;
+    background: url("/static/images/hero_image.jpg") no-repeat center center;
     width: 100%;
-    height: auto;
+    height: 20px;
 }
 
 body {
