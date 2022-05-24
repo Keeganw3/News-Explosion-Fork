@@ -54,10 +54,16 @@ a:hover {
 /* footer */
 footer {
     background-color: #303030;
+    text-align: center;
 }
 
 .ft-text {
-    text-align: center;
+    margin-bottom: 0%;
+}
+
+.ft-links {
+    padding: 5%;
+    font-size: 160%;
 }
 
 /* post pages */
