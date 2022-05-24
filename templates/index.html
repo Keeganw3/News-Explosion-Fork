@@ -2,14 +2,13 @@
 
 {% block content %}
 
-
 <div class="container container-fluid">
     <div class="hero-image">
         <h1 class="hero-text">Web Stories</h1>
     </div>
 </div>
 <div class="container-fluid">
-    <div class="row card-group">
+    <div class="row card-row">
         {% for post in post_list %}
         <div class="col-3 card-columns posts">
             {% if "placeholder" in post.featured_image.url %}
