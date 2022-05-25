@@ -9,5 +9,12 @@
         <img class="img-fluid" src="{{ post.featured_image.url }}" alt="">
     {% endif %}
 </div>
-<div class="post-content">{{ post.content|safe }}</div>
+    <div class="post-content">{{ post.content|safe }}</div>
+    <div class="row">
+        <h4>Comment section:</h4>
+        {% for comment in comments %}
+        <div class="col-6">
+            <div>{{ comment.body }}</div>
+        {% endfor %}
+    </div>
 {% endblock content %}
