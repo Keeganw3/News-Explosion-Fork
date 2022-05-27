@@ -55,7 +55,11 @@ Users with accounts can comment on posts once an admin has approved the comment.
 
 ![Post's Stories(Comments)](static/images/pp4-post-stories-screenshot2.png)
 
-# Account Registration
+When a user has left a comment they are given an alert to notify them.
+
+![Comment's Alert](static/images/pp4-comment-alert.png)
+
+## Account Registration
 ### Registration Page
 * This application allows the user to create an account to login and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
@@ -71,7 +75,7 @@ Users with accounts can comment on posts once an admin has approved the comment.
 
 ![Logout page](static/images/pp4-logout-page.png)
 
-# Footer
+## Footer
 * The footer is used to add authenticity to the website and to let people know that this is strictly for educational use only.
 ![Footer](static/images/pp4-footer-screenshot.png)
 
