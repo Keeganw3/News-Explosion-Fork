@@ -55,9 +55,11 @@ Users with accounts can comment on posts once an admin has approved the comment.
 
 ![Post's Stories(Comments)](static/images/pp4-post-stories-screenshot2.png)
 
-## End Results Screen
-* This screen displays the full schedule that the user has made up for the day in a list so it is clearly visible and easy to find once you are done with the app.
-![Screenshot](/assets/screenshots/end_results_screenshot.jpg)
+
+
+# Footer
+* The footer is used to add authenticity to the website and to let people know that this is strictly for educational use only.
+![Footer](static/images/pp4-footer-screenshot.png)
 
 # Future Features to be added 
 ## Time Allotments
