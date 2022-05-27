@@ -116,7 +116,20 @@ screenshot()(detail?)
 
 # Design
 ## Wireframes
+* 
+<details>
+<summary>Wireframes</summary>
 
+![home-wireframe](static/wireframes/pp4-home-page-wireframe.png)
+
+![post-wireframe](static/wireframes/pp4-post-story-page-wireframe.png)
+
+![register-wireframe](static/wireframes/pp4-registration-page-wireframe.png)
+
+![login-wireframe](static/wireframes/pp4-login-page-wireframe.png)
+
+![logout-wireframe](static/wireframes/pp4-logout-page-wireframe.png)
+</details>
 
 ## Entity Relationship Diagrams
 
