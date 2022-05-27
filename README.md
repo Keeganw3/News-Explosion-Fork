@@ -56,15 +56,18 @@ Users with accounts can comment on posts once an admin has approved the comment.
 ![Post's Stories(Comments)](static/images/pp4-post-stories-screenshot2.png)
 
 # Account Registration
+### Registration Page
 * This application allows the user to create an account to login and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
 ![Registration page](static/images/pp4-registration-page.png)
 
-Logging in lets the user leave comments on posts. The register and log in links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and login with logout to easily allow the user to sign out when they're done.
+### Login Page
+* Logging in lets the user leave comments on posts. The register and log in links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and login with logout to easily allow the user to sign out when they're done.
 
 ![Login page](static/images/pp4-login-page.png)
 
-The logout page will ask the user if they are certain that they would like to logout and they must press a button to confirm this.
+### Logout Page
+* The logout page will ask the user if they are certain that they would like to logout and they must press a button to confirm this.
 
 ![Logout page](static/images/pp4-logout-page.png)
 
