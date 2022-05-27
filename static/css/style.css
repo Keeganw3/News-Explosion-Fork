@@ -21,6 +21,24 @@ img {
     width: 50%
 }
 
+button {
+    color:#505050;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #303030;
+}
+
+.paginate-color {
+    color:#505050;
+}
+
+.paginate-color:hover {
+    color: #ffffff;
+    background-color: #303030;
+}
+
 /* card post displays */
  /* .card-text {
     text-overflow: ellipsis;
