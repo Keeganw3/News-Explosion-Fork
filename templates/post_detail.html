@@ -1,5 +1,5 @@
 {% extends 'base.html' %} {% block content %}
-
+{% load crispy_forms_tags %}
 <div class="post-title">{{ post.title }}</div>
 <div>Author: {{ post.author }}</div>
 <div class="post-image container-fluid">
@@ -18,4 +18,12 @@
             <br>
         {% endfor %}
     </div>
+    <div>
+        <div>
+            {% if user.is_authenticated %}
+            {{ comment_form | crispy }}
+            {% endif %}
+        </div>
+    </div>
+
 {% endblock content %}
