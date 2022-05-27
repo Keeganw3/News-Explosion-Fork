@@ -40,7 +40,8 @@ button:hover {
 }
 
 /* card post displays */
- /* .card-text {
+
+/* .card-text {
     text-overflow: ellipsis;
 
     /* Required for text-overflow to do anything */
@@ -102,6 +103,7 @@ footer {
 }
 
 /* comment section */
+
 .card-body{
     background-color: #303030;
 }

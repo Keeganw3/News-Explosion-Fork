@@ -32,26 +32,24 @@ Admins can make posts on topics they care about or want to share news on. They c
 
 ![Navbar Logged In](/static/images/pp4-navbar-screenshot2.png)
 
-## Main Menu
-* The first 4 options are suggestions for their schedule and option 5 lets the user make their own option. The user can leave the program when they're on the menu by clicking 6.
-![Screenshot](/assets/screenshots/main_menu_screenshot.jpg)
+## Hero Image and Text
+* The hero image has text overlayed on top of it to clearly give the user an immediate idea of the site's purpose.
 
-* When an option is chosen and placed in the list it is displayed a line space away from the choices to give the user better readability. The user will always be shown their current list everytime a task has been added to it. 
-![Screenshot](/assets/screenshots/list_screenshot.jpg)
+![Hero Image](/static/images/pp4-hero-image-screenshot.png)
 
-## Main Menu Validator
-* The user is asked to enter a number from 1-6. If they use a number outside of this range an error is displayed which asks the user to pick a number within this range.
-![Screenshot](/assets/screenshots/incorrect_num_screenshot.jpg)
+## Card Posts
+* Posts are displayed to the user underneath the hero image in cards. These cards show the post's hero image, the headline, the author, and the text in the post. This lets the user quickly decide whether or not this is a post they would like to click on.
 
-* The user is given a similar response if they submit a letter instead of a number.
-![Screenshot](/assets/screenshots/incorrect_variable_screenshot.jpg)
+![Card Posts](/static/images/pp4-card-post-screenshot.png)
 
-## User created options
-* The user can make their own options to be added into their list plans for the day. The user can do this as many times as they want and the input can be as long as they desire to give full flexibility to the user.
-![Screenshot](/assets/screenshots/create_options_screenshot.jpg)
- 
-* The user can exit this screen by typing 'exit'. This will not affect the user's list and they will be returned to the main menu. This gives the user a chance to go back to the main menu if they didn't mean to come to this screen.
-![Screenshot](/assets/screenshots/exit_create_options_screenshot.jpg)
+
+## Post's Stories
+* When a user clicks on a card post they are sent to page with the hero image and headline at the top and the body of text about the post below with the author similar to the card post. A comment section is displayed underneath the post so people can share their thoughts.
+
+Users with accounts can comment on posts once an admin has approved the comment. Admins are also able to delete comments in case they change their mind.
+
+![Post's Stories(Top)](/static/images/pp4-posts-stories-screenshot1.png)
+![Post's Stories(Bottom)](static/images/pp4-post-stories-screenshot2.png)
 
 ## Exiting Daily Planner
 * Once the list has 3 tasks in it, the user is prompted to exit the daily planner by hitting "y" or "n". If they enter another key the code will tell them they hit the wrong key and ask them to put in "y" or "n". "y" or "n" can be put in with spaces or as capital letters to give the user more flexibilty when using the app.
