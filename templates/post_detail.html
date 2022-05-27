@@ -17,13 +17,23 @@
             <div>{{ comment.name }} <br> {{ comment.body }}</div>
             <br>
         {% endfor %}
-    </div>
-    <div>
-        <div>
-            {% if user.is_authenticated %}
-            {{ comment_form | crispy }}
-            {% endif %}
         </div>
     </div>
-
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 card mb-4 mt-3">
+            <div class="card-body">
+                {% if user.is_authenticated %}
+                <h3>Want to tell other people what you thought of this post? Leave a comment below:</h3>
+                <p>{{ user.username }}</p>
+                <form method="post" class="mr-3">
+                    {{ comment_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit">Submit</button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}

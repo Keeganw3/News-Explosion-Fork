@@ -100,3 +100,8 @@ footer {
 .post-content {
     width: 100%;
 }
+
+/* comment section */
+.card-body{
+    background-color: #303030;
+}
