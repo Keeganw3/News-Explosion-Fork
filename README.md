@@ -44,22 +44,16 @@ Admins can make posts on topics they care about or want to share news on. They c
 
 
 ## Post's Stories
-* When a user clicks on a card post they are sent to page with the hero image and headline at the top and the body of text about the post below with the author similar to the card post. A comment section is displayed underneath the post so people can share their thoughts.
+* When a user clicks on a card post they are sent to page with the hero image and headline at the top and the body of text about the post below with the author similar to the card post.
+
+![Post's Stories(Text)](/static/images/pp4-posts-stories-screenshot1.png)
+
+## Commenting on Posts
+* A comment section is displayed underneath the post so people can share their thoughts.
 
 Users with accounts can comment on posts once an admin has approved the comment. Admins are also able to delete comments in case they change their mind.
 
-![Post's Stories(Top)](/static/images/pp4-posts-stories-screenshot1.png)
-![Post's Stories(Bottom)](static/images/pp4-post-stories-screenshot2.png)
-
-## Exiting Daily Planner
-* Once the list has 3 tasks in it, the user is prompted to exit the daily planner by hitting "y" or "n". If they enter another key the code will tell them they hit the wrong key and ask them to put in "y" or "n". "y" or "n" can be put in with spaces or as capital letters to give the user more flexibilty when using the app.
-![Screenshot](/assets/screenshots/exit_planner_screenshot.jpg)
-
-* If they hit "y", they will leave the planner. They will have to hit enter to get to the End Results screen.
-![Screenshot](/assets/screenshots/y_exit_planner_screenshot.jpg)
-
-* If they hit "n" they can add another task and will be asked if they want to leave again every time they add a new task. They will have to hit enter once again to return to the main menu.
-![Screenshot](/assets/screenshots/n_exit_planner_screenshot.jpg)
+![Post's Stories(Comments)](static/images/pp4-post-stories-screenshot2.png)
 
 ## End Results Screen
 * This screen displays the full schedule that the user has made up for the day in a list so it is clearly visible and easy to find once you are done with the app.
