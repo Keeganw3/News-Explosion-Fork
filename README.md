@@ -25,8 +25,8 @@ Admins can make posts on topics they care about or want to share news on. They c
 
 # Features
 ## Existing Features
-## Welcome Screen
-* The user is told what the program is and how to use it. After they hit enter it shows the main menu where the user is given all the options for what they can do with the daily planner in a straightforward and easy to read format.
+## Navigation Bar
+* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website and maintains a consistent look on across the website. The nav bar contains links to the home, login and registration pages. If a user is signed in a link for logging out is added.
 
 ![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
 
