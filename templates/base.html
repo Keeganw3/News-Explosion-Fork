@@ -25,7 +25,10 @@
                     <a href="{% url 'home' %}">Home</a>
                 </li>
                 <li>
-                    <a href="{% url 'account_signup' %}">Register/Sign-in</a>
+                    <a href="{% url 'account_signup' %}">Register</a>
+                </li>
+                <li>
+                    <a href="{% url 'account_login' %}">Login</a>
                 </li>
                 {% if user.is_authenticated %}
                 <li>
