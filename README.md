@@ -55,7 +55,7 @@ Users with accounts can comment on posts once an admin has approved the comment.
 
 ![Post's Stories(Comments)](static/images/pp4-post-stories-screenshot2.png)
 
-
+# Account Registration
 
 # Footer
 * The footer is used to add authenticity to the website and to let people know that this is strictly for educational use only.
