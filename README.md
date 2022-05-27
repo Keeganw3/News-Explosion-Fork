@@ -26,7 +26,7 @@ Admins can make posts on topics they care about or want to share news on. They c
 # Features
 ## Existing Features
 ## Navigation Bar
-* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website and maintains a consistent look on across the website. The nav bar contains links to the home, login and registration pages. If a user is signed in a link for logging out is added.
+* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website and maintains a consistent look on across the website. The nav bar contains links to the home, login and registration pages when a user is not logged in. If a user is logged in a link for logging out replaces these links.
 
 ![Navbar Logged Out](/static/images/pp4-navbar-screenshot1.png)
 
