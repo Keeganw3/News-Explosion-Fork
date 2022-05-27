@@ -80,11 +80,20 @@ When a user has left a comment they are given an alert to notify them.
 ![Footer](static/images/pp4-footer-screenshot.png)
 
 # Future Features to be added 
-## Time Allotments
-* I would ike the user to be able to set these tasks to go on for a set amount of time to allow them to better plan out their day. They could also set a start and end time and try to work within these confines.
+### Likes/Dislikes
+* This would allow the user to like and dislike posts to and give people an indicator about whether they should read it or not.
 
-## Improved UI of End Results Screen
-I would like the final display of the user's daily plan to be displayed one at a time on a line instead of all together in the list. I tried to make this a couple times but couldn't figure it out before submission.
+### Post Filter
+* Ideally a user could filter through different posts based on the type of new story it is e.g. (medical, tv, celebrity), how recent it is and the number of comments (interactivity) to give the user an easier time of navigating the website and posts.
+
+### Dates
+* This would allow users to see how relevant the post and comments are.
+
+### Allow users to make posts
+* Users would have much greater influence over the website through being able to leave posts.
+
+### Restyling of admin pages
+* The admin pages all add functionality to the wesbite but they don't match the website's theme or have its core features (navbar and footer).
 
 # Technologies Used
 * HTML - A mark-up language that uses semantic structures.
@@ -105,13 +114,12 @@ screenshot()(detail?)
 * GitHub: a repository for the code after being made in Git.
 * Heroku: used to deploy the application and hosts a page for the code.
 
-## Design
-* W3C HTML Validator - For cleaning and correcting HTML code.
-* CSS Validator - For cleaning and correcting CSS code.
-* JSHint - For cleaning and correcting Javascript code.
-* Google Chrome Dev Tools - Used for Lighthouse to check and improve the website's accessability.
-* WCAG Contrast Checker - For choosing accessible colours.
-* Grammerly - For checking spelling and grammer.
+# Design
+## Wireframes
+
+
+## Entity Relationship Diagrams
+
 
 # Testing
 ## Validator Testing
@@ -135,6 +143,12 @@ This is a screenshot taken from doing an accessibility test on Developer Tools L
 
 ![Screenshot](/assets/screenshots/accessibility-screenshot.png)
 
+* W3C HTML Validator - For cleaning and correcting HTML code.
+* CSS Validator - For cleaning and correcting CSS code.
+* JSHint - For cleaning and correcting Javascript code.
+* Google Chrome Dev Tools - Used for Lighthouse to check and improve the website's accessability.
+* WCAG Contrast Checker - For choosing accessible colours.
+* Grammerly - For checking spelling and grammer.
 
 ## Manual Testing
 I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
