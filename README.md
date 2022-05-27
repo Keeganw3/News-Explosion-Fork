@@ -28,7 +28,9 @@ Admins can make posts on topics they care about or want to share news on. They c
 ## Navigation Bar
 * The navigation bar is provided at the top of the webpage to allow the user to easily explore the website and maintains a consistent look on across the website. The nav bar contains links to the home, login and registration pages. If a user is signed in a link for logging out is added.
 
-![Screenshot](/assets/screenshots/welcome_screenshot.jpg)
+![Navbar Logged Out](/static/images/pp4-navbar-screenshot1.png)
+
+![Navbar Logged In](/static/images/pp4-navbar-screenshot2.png)
 
 ## Main Menu
 * The first 4 options are suggestions for their schedule and option 5 lets the user make their own option. The user can leave the program when they're on the menu by clicking 6.
