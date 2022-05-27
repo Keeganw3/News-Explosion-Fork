@@ -1,13 +1,11 @@
-# My Daily Scheduler
+<h1 align="center">News Explosion</h1>
+
 ## Project Description
-<p> My Daily Scheduler is a command line application to help you plan out what you would like to do in a day no matter what that may be!
+<p> This project is an news sharing application based around people sharing news they care about and hearing other people's thoughts.
 
-The user can input all the activities they would like to do and the application will give them back to the user in a list for them to do as they please.
+The average user can view all posts and if they make an account they can to comment on posts.
 
-This project is a multiple choice quiz that is for people of all ages designed to test their trivia knowledge. The idea was based on the show from the 80s, Who Wants To Be a Millionaire. It focuses on general knowledge and contains questions that were asked in the show that scale with difficulty as the player gets through each question. This might encourage people to go back and look at the show to see how it became so well known.
-
-
-
+Admins can make posts on topics they care about or want to share news on. They can also comment on any posts and approve comments whenever a user with an account makes one. 
 </p>
 
 # UX
