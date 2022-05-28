@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
-from .models import Post 
+from .models import Post
 from .forms import CommentForm
 
 
@@ -9,6 +9,7 @@ class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     paginate_by = 3
+
 
 class PostDetail(View):
 
@@ -30,7 +31,7 @@ class PostDetail(View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('-created_on')
-        
+
         make_comment = CommentForm(data=request.POST)
 
         if make_comment.is_valid():
@@ -41,7 +42,7 @@ class PostDetail(View):
             comment.save()
         else:
             make_comment = CommentForm()
-        
+
         return render(
             request, "post_detail.html",
             {

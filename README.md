@@ -183,18 +183,28 @@ When a user has left a comment they are given an alert to notify them.
     </a>
 </p>
 
-<detail>
+<details>
 <summary>CSS Validation</summary>
 
-![css validation](static/validation-images/pp4-css-validation.png)
+![CSS Validation](static/validation-images/pp4-css-validation.png)
 
-</detail>
+</details>
 
 ### Python
-* 
-<detail>
+* Only models.py and settings didn't pass testing because the length of the lines of code had too many characters but there isn't a way to shorten them.
+<details>
 <summary>Python Validation</summary>
-</detail>
+
+![Admin Validation](static/python-validation/pp4-adminpy-validation.png)
+![Apps Validation](static/python-validation/pp4-appspy-validation.png)
+![Blog-Urls Validation](static/python-validation/pp4-blog-urlspy-validation.png)
+![Forms Validation](static/python-validation/pp4-formspy-validation.png)
+![Models Validation](static/python-validation/pp4-modelspy-validation.png)
+![Settings Validation](static/python-validation/pp4-settingspy-validation.png)
+![Urls Validation](static/python-validation/pp4-urlspy-validation.png)
+![Views Validation](static/python-validation/pp4-viewspy-validation.png)
+
+</details>
 
 ## Accessibility Testing
 This is a screenshot taken from doing an accessibility test on Developer Tools Lighthouse.
