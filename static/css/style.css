@@ -97,3 +97,16 @@ footer {
 .card-body{
     background-color: #303030;
 }
+
+/* media queries */
+@media screen and (min-width=576) {
+    .card-title{
+        font-size: 50%;
+    }
+
+    .card-text{
+        font-size: 50%;
+        margin: 0%;
+        padding: 0%;
+    }
+}

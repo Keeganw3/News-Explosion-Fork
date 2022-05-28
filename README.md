@@ -178,7 +178,7 @@ When a user has left a comment they are given an alert to notify them.
 </details>
 
 ### Python
-* Only models.py and settings didn't pass testing because the length of the lines of code had too many characters but there isn't a way to shorten them.
+* Only the models.py and settings.py files didn't pass testing because the length of the lines of code had too many characters but there isn't a way to shorten them.
 
 <details>
 <summary>Python Validation</summary>
