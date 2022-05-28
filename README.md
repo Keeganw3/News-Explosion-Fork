@@ -164,12 +164,12 @@ When a user has left a comment they are given an alert to notify them.
 <details>
 <summary>HTML Validation</summary>
 
-![base.html checker](static/validator-images/pp4-basehtml-validator.png)
-![index.html checker](static/validator-images/pp4-indexhtml-validator.png)
-![post.html checker](static/validator-images/pp4-posthtml-validator.png)
-![signup.html checker](static/validator-images/pp4-signuphtml-validator.png)
-![login.html checker](static/validator-images/pp4-loginhtml-validator.png)
-![logout.html checker](static/validator-images/pp4-logouthtml-validator.png)
+![base validation](static/validator-images/pp4-basehtml-validator.png)
+![index validation](static/validator-images/pp4-indexhtml-validator.png)
+![post validation](static/validator-images/pp4-posthtml-validator.png)
+![signup validation](static/validator-images/pp4-signuphtml-validator.png)
+![login validation](static/validator-images/pp4-loginhtml-validator.png)
+![logout validation](static/validator-images/pp4-logouthtml-validator.png)
 
 </details>
 
@@ -185,6 +185,9 @@ When a user has left a comment they are given an alert to notify them.
 
 <detail>
 <summary>CSS Validation</summary>
+
+![css validation](static/validation-images/pp4-css-validation.png)
+
 </detail>
 
 ### Python
