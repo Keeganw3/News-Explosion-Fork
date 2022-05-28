@@ -157,7 +157,22 @@ When a user has left a comment they are given an alert to notify them.
 # Testing
 ## Validator Testing
 ### HTML
-* No errors or warnings were found through W3C validator.
+* The only errors that are occuring here are from the jinja code because it the website doesn't support it. The images below is the code not containing the jinja code and passing the tests showing that is meets the appropriate requirements. The !Doctype and footer were pasted in as well because these weren't detected as coming from the jinja tags.
+
+* Many htmls files were imported from different sources to allow the website to work but were never touched so those haven't been validated. However the login, logout and signup were altered so those have been validated below.
+
+<details>
+<summary>HTML Validation</summary>
+
+![base.html checker](static/validator-images/pp4-basehtml-validator.png)
+![index.html checker](static/validator-images/pp4-indexhtml-validator.png)
+![post.html checker](static/validator-images/pp4-posthtml-validator.png)
+![signup.html checker](static/validator-images/pp4-signuphtml-validator.png)
+![login.html checker](static/validator-images/pp4-loginhtml-validator.png)
+![logout.html checker](static/validator-images/pp4-logouthtml-validator.png)
+
+</details>
+
 ### CSS
 * No errors or warnings were found through the W3C CSS validator and I was given the code for this icon to prove this.
 <p>
@@ -168,8 +183,15 @@ When a user has left a comment they are given an alert to notify them.
     </a>
 </p>
 
-### Javascript
-* JSHint returned no errors although it gave warnings that score isn't defined in the results function. This was used instead of correct which is equal to the same object. score.innertext was used instead because calling the correct from the checkAnswer function didn't work.
+<detail>
+<summary>CSS Validation</summary>
+</detail>
+
+### Python
+* 
+<detail>
+<summary>Python Validation</summary>
+</detail>
 
 ## Accessibility Testing
 This is a screenshot taken from doing an accessibility test on Developer Tools Lighthouse.
