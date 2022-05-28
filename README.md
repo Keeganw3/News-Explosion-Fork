@@ -116,7 +116,8 @@ screenshot()(detail?)
 
 # Design
 ## Wireframes
-* 
+* These wireframes are for the home, post story, registration, login and logout pages. There are not wireframes for the Django admin pages used for creating posts, comments and comment approval.
+
 <details>
 <summary>Wireframes</summary>
 
@@ -132,7 +133,18 @@ screenshot()(detail?)
 </details>
 
 ## Entity Relationship Diagrams
+* The ER diagram shows the logic between the post and comments model with the author having a fixed ID that is used between the two. The relationship between the comments and author is a many-to-many relationship at both ends. 
 
+* The relationship between the author and the posts and the posts and comments is one-to-many relationship.
+
+* The likes, created_on and updated_on variables are data that wasn't used in the end.
+
+<details>
+<summary>Entity Relationship diagram for Posts and Comments</summary>
+
+![ER Diagram](static/er-diagrams/pp4-er-diagram.png)
+
+</details>
 
 # Testing
 ## Validator Testing
