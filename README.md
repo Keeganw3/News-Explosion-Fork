@@ -96,23 +96,28 @@ When a user has left a comment they are given an alert to notify them.
 * The admin pages all add functionality to the wesbite but they don't match the website's theme or have its core features (navbar and footer).
 
 # Technologies Used
+## Languages Used
 * HTML - A mark-up language that uses semantic structures.
 * CSS - Cascade style sheets are used to style the quiz and website.
 * Javascript - Programming language used to make the quiz.
 * Python - Programming language used to create the databases, models and views for this website.
+
+## Libraries, Frameworks and Programs
 * Gitpod - Used as a platform for writing code. The command line commits and pushes to GitHub.
-* GitHub - Hosts this repository.
-* Heroku - Cloud platform used to run this application.
+* GitHub - Used for agile development to track progress on the kanban board.
+* Heroku - Cloud platform used to deploy this application and host the code.
 * Flask - Used to make working with Python easier and faster.
 * Django - Used for importing frameworks that sped up making the website.
+* Bootstrap - Used to build webpages.
 * Cloudinary - Used to display the images used on the website indefinitely.
-
-## Programs Used
-* lucid.app: used to create the flowchart for this project.
-screenshot()(detail?)
-* Git: used for creating the code for this project and sending it to GitHub.
-* GitHub: a repository for the code after being made in Git.
-* Heroku: used to deploy the application and hosts a page for the code.
+* lucidchart - Used to create the entitiy relationship diagram for this project.
+* Balsamiq - Used to make the wireframes for the webpages.
+* Allauth - Used for account registration.
+* Font Awesome - Used to include the icons in the footer.
+* Google Fonts - Used to allow different fonts when creating posts.
+* Gunicorn - Used as a server to help run on Heroku.
+* Django Crispy Forms - Used to easily create forms for logging in.
+* Django Summernote - Used for post creation.
 
 # Design
 ## Wireframes
@@ -140,11 +145,13 @@ screenshot()(detail?)
 * The likes, created_on and updated_on variables are data that wasn't used in the end.
 
 <details>
-<summary>Entity Relationship diagram for Posts and Comments</summary>
+<summary>Entity Relationship Diagram for Posts and Comments</summary>
 
 ![ER Diagram](static/er-diagrams/pp4-er-diagram.png)
 
 </details>
+
+## Planning
 
 # Testing
 ## Validator Testing
