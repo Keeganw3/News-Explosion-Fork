@@ -1,17 +1,16 @@
 <h1 align="center">News Explosion</h1>
 
 ## Project Description
-<p> This project is an news sharing application based around people sharing news they care about and hearing other people's thoughts.
+<p> This project is a news-sharing application based on people sharing news they care about and hearing other people's thoughts.
 
-The average user can view all posts and if they make an account they can to comment on posts.
+The average user can view all posts and if they make an account they can comment on posts.
 
-Admins can make posts on topics they care about or want to share news on. They can also comment on any posts and approve comments whenever a user with an account makes one. 
-</p>
+Admins can make posts on topics they care about or want to share news on. They can also comment on any posts and approve comments whenever a user with an account makes one.</p>
 
 # Features
 ## Existing Features
 ## Navigation Bar
-* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website and maintains a consistent look on across the website. The nav bar contains links to the home, login and registration pages when a user is not logged in. If a user is logged in a link for logging out replaces these links.
+* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website and maintains a consistent look on across the website. The navbar contains links to the home, log-in, and registration pages when a user is not logged in. If a user is logged in a link for logging out replaces these links.
 
 ![Navbar Logged Out](/static/images/pp4-navbar-screenshot1.png)
 
@@ -29,63 +28,62 @@ Admins can make posts on topics they care about or want to share news on. They c
 
 
 ## Post's Stories
-* When a user clicks on a card post they are sent to page with the hero image and headline at the top and the body of text about the post below with the author similar to the card post.
+* When a user clicks on a card post they are sent to a page with the hero image and headline at the top and the body of text about the post below with the author similar to the card post. An admin must approve a post in order for it to appear on the website.
 
 ![Post's Stories(Text)](/static/images/pp4-posts-stories-screenshot1.png)
 
 ## Commenting on Posts
 * A comment section is displayed underneath the post so people can share their thoughts.
-
-Users with accounts can comment on posts once an admin has approved the comment. Admins are also able to delete comments in case they change their mind.
+* Users with accounts can comment on posts once an admin has approved the comment. Admins are also able to delete comments in case they change their minds.
 
 ![Post's Stories(Comments)](static/images/pp4-post-stories-screenshot2.png)
 
-When a user has left a comment they are given an alert to notify them.
+* When a user has left a comment they are given an alert to notify them.
 
 ![Comment's Alert](static/images/pp4-comment-alert.png)
 
 ## Account Registration
 ### Registration Page
-* This application allows the user to create an account to login and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
+* This application allows the user to create an account to log in and access additional features on the app. When registering the webpage will ask for a username (that doesn't already exist), an optional email, a password, and the password a second time to confirm it. The webpage will detect the strength of the password entered to make sure it isn't too small or easy to figure out.
 
 ![Registration page](static/images/pp4-registration-page.png)
 
 ### Login Page
-* Logging in lets the user leave comments on posts. The register and log in links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and login with logout to easily allow the user to sign out when they're done.
+* Logging in lets the user leave comments on posts. The register and login links are only in the navbar whenever the user isn't already logged in. When the user is logged in the navbar replaces register and log in with log out to easily allow the user to sign out when they're done.
 
 ![Login page](static/images/pp4-login-page.png)
 
 ### Logout Page
-* The logout page will ask the user if they are certain that they would like to logout and they must press a button to confirm this.
+* The logout page will ask the user if they are certain that they would like to log out and they must press a button to confirm this.
 
 ![Logout page](static/images/pp4-logout-page.png)
 
 ## Footer
 * The footer is used to add authenticity to the website and to let people know that this is strictly for educational use only.
+
 ![Footer](static/images/pp4-footer-screenshot.png)
 
 # Future Features to be added 
 ### Likes/Dislikes
-* This would allow the user to like and dislike posts to and give people an indicator about whether they should read it or not.
+* This would allow the user to like and dislike posts and give people an indicator of whether they should read them or not.
 
 ### Post Filter
-* Ideally a user could filter through different posts based on the type of new story it is e.g. (medical, tv, celebrity), how recent it is and the number of comments (interactivity) to give the user an easier time of navigating the website and posts.
+* Ideally, a user could filter through different posts based on the type of new story it is e.g. (medical, tv, celebrity), how recent it is and the number of comments (interactivity) to give the user an easier time navigating the website and posts.
 
 ### Dates
 * This would allow users to see how relevant the post and comments are.
 
 ### Allow users to make posts
-* Users would have much greater influence over the website through being able to leave posts.
+* Users would have much greater influence over the website by being able to leave posts.
 
 ### Restyling of admin pages
-* The admin pages all add functionality to the wesbite but they don't match the website's theme or have its core features (navbar and footer).
+* The admin pages all add functionality to the website but they don't match the website's theme or have its core features (navbar and footer).
 
 # Technologies Used
 ## Languages Used
 * HTML - A mark-up language that uses semantic structures.
 * CSS - Cascade style sheets are used to style the quiz and website.
-* Javascript - Programming language used to make the quiz.
-* Python - Programming language used to create the databases, models and views for this website.
+* Python - Programming language used to create the databases, models, and views for this website.
 
 ## Libraries, Frameworks and Programs
 * Gitpod - Used as a platform for writing code. The command line commits and pushes to GitHub.
@@ -106,7 +104,7 @@ When a user has left a comment they are given an alert to notify them.
 
 # Design
 ## Wireframes
-* These wireframes are for the home, post story, registration, login and logout pages. There are not wireframes for the Django admin pages used for creating posts, comments and comment approval.
+* These wireframes are for the home, post story, registration, login, and logout pages. There are no wireframes for the Django admin pages used for creating posts, comments, and comment approval.
 
 <details>
 <summary>Wireframes</summary>
@@ -123,11 +121,11 @@ When a user has left a comment they are given an alert to notify them.
 </details>
 
 ## Entity Relationship Diagrams
-* The ER diagram shows the logic between the post and comments model with the author having a fixed ID that is used between the two. The relationship between the comments and author is a many-to-many relationship at both ends. 
+* The ER diagram shows the logic between the post and comments model with the author having a fixed ID that is used between the two. The relationship between the comments and the author is a many-to-many relationship at both ends.
 
-* The relationship between the author and the posts and the posts and comments is one-to-many relationship.
+* The relationship between the author and the posts and the posts and comments is a one-to-many relationship.
 
-* The likes, created_on and updated_on variables are data that wasn't used in the end.
+* The likes, created_on, and updated_on variables are data that wasn't used in the end.
 
 <details>
 <summary>Entity Relationship Diagram for Posts and Comments</summary>
@@ -194,26 +192,21 @@ When a user has left a comment they are given an alert to notify them.
 
 </details>
 
+### User Testing
+All issues completed were tested extensively to make sure that they worked as intended. Any bugs not removed are noted on the Bugs Known section below.
+
+The post drafting was tested by logging into the admin page and creating test posts to see the functionality at work amake sure it was showing up on the database.
+
+The administration account was tested by creating another user and making a comment on a post. The didn't show up until I logged in as the admin and approved the post like it was intended. I deleted a comment to ensure this worked too and a post was also made and deleted by an admin to make this functioned correctly.
+
+When the account registration was made it was tested by going to the registration page and filling it out. I added a username, made a password and confirmed it. I knew I was signed in because the navbar changed from Register/Log-in to Logout.
+
 ## Manual Testing
+### Media Queries
 I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
 
-For media queries, 768px, 500px, and below the text across the website is shrunk to maintain a clear structure on smaller screens and the logo was slightly adjusted. Media queries at sizes larger than this were only needed for the reset button to stay centred because the rest of the website was able to fill out the screen at these sizes well.
+This project was designed with mobile first in mind so the only media query that was made was for 576px or less because this is when the text of the card titles for the card posts would start to overlap on one another so the font size was reduced.
 
-When checking the app on mobile I noticed that the font size was too large for both the header and questions making it so the user would need to scroll right to see the full question. This was fixed by shrinking the size of the text by 10%.
-
-## Usability Testing
-After I deployed this site I had friends and family test the usability of the website.
-
-The first user asked to be able to see which question they were on. This was fixed by placing the question number in each question's text.
-
-Another user asked for a way to restart the quiz at any time while they're going through it. This was addressed by adding a reset button above the question to make it easy for the user to see.
-
-### What I think a user may have wanted:
-* A way to keep track of the number of correct answers - added a scoreboard
-* A way of knowing which button the user was on - added this by making buttons change colour when a mouse hovers over it.
-* A confirmation for when an answer for a question is chosen - added an alert that comes up for each question when an answer is clicked.
-* A way to view their results - added an alert at the top of the page telling them how well they did.
-* A way to contact the site owner if they discover a bug - added a footer with relevant contact information.
 
 ## Known Bugs
 * The card text for card posts never stops extending until it has displayed all of its text. I tried a few ways to prevent this would usually end with the text being hidden but the page staying the same length so the user would scroll down a long blank section.
@@ -233,9 +226,9 @@ This app was deployed using Heroku.
 * Scroll furthur down on this tab to Buildpack. 
 * Click 'add Buildpack' and select Python. Do this again and select Node.js. Make sure Python is first and Node.js is second or it could affect your code.
 * Go to the Deploy tab and you will see the deployment method, click Github. Enter the name of your repository and you will be given a list of the closest names that resemble what you have typed, click the one you want for this app.
-* Scroll down to the Automatic Deploys section and click automatic deploy. This will make the app update to launch the latest cade that was pushed to Github everytime it is opened.
-* You can also use Manual Deploy if this is the final version of your code.  
-* Click Open App in the top right of the screen and the app should run.
+* Sign into heroku on gitpod and deploy from gitpod.
+* You should set DEBUG = True when you start making your code to make it appear cleanly in the gitpod repository but when this is no longer needed remove this or set DEBUG to false.
+* Back on heroku go to click Open App in the top right of the screen and the app should run as long as DEBUG is false.
 
 ## Forking
 * Log into Github
