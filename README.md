@@ -152,6 +152,7 @@ When a user has left a comment they are given an alert to notify them.
 </details>
 
 ## Planning
+* A Github project with issues was used as an Agile Tool for tracking progress on this project. The issues were tracked using a kanban board and were linked to an Epic that would show the over all goal of the issues.
 
 # Testing
 ## Validator Testing
@@ -238,9 +239,7 @@ This app was deployed using Heroku.
 ## Credits
 * My mentor Brian Macharia who supported me and provided me with both feedback and solutions to problems I faced while creating the website.
 * My lecturer Simen Daehlin helped me to better write my code to solve a couple of problems I had run into.
-* The people from Slack who answered my questions when I needed them to.
 * Code institute for the classes, sources, and tutors that they provided me.
-* The people at student support who tried to help me for several hours.
 * Bootstrap for the media query sizes that I used: https://getbootstrap.com/docs/4.1/layout/overview/
 
 ## Content
