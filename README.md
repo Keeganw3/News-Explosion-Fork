@@ -252,6 +252,10 @@ This app was deployed using Heroku.
 
 # Acknowledgements
 ## Credits
+* Most of the code and issues were heavily influenced by the information on the "I Think Therefore I Blog" walkthrough project from Code Institute.
+* Pagination boilerplate was used in this project. It was found from it being mentioned in the CI project above.
+* This youtube video that was used to give me a better understanding of Entity Relationship Diagrams, https://www.youtube.com/watch?v=-CuY5ADwn24.
+* Another youtube video that helped improve my understanding of views and linking them up to urls, https://www.youtube.com/watch?v=TblSa29DX6I.
 * My mentor Brian Macharia who supported me and provided me with both feedback and solutions to problems I faced while creating the website.
 * My lecturer Simen Daehlin helped me to better write my code to solve a couple of problems I had run into.
 * Code institute for the classes, sources, and tutors that they provided me.
