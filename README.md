@@ -8,21 +8,6 @@ The average user can view all posts and if they make an account they can to comm
 Admins can make posts on topics they care about or want to share news on. They can also comment on any posts and approve comments whenever a user with an account makes one. 
 </p>
 
-# UX
-## User Stories
-
-## Strategy
-
-## Scope
-
-## Structure
-
-## Skeleton
-(Include wireframes and er diagrams. Could move this to design and make different sections.)
-
-## Surface
-(Mention color scheme)
-
 # Features
 ## Existing Features
 ## Navigation Bar
@@ -159,7 +144,7 @@ When a user has left a comment they are given an alert to notify them.
 ### HTML
 * The only errors that are occuring here are from the jinja code because it the website doesn't support it. The images below is the code not containing the jinja code and passing the tests showing that is meets the appropriate requirements. The !Doctype and footer were pasted in as well because these weren't detected as coming from the jinja tags.
 
-* Many htmls files were imported from different sources to allow the website to work but were never touched so those haven't been validated. However the login, logout and signup were altered so those have been validated below.
+* The jinja tags were left in instead of being replaced with standard html because it would've meant taking out the if statements that make the navbar and comments section change based on whether the user is signed in so this was chosen as the better option.
 
 <details>
 <summary>HTML Validation</summary>
@@ -172,6 +157,8 @@ When a user has left a comment they are given an alert to notify them.
 ![logout validation](static/validator-images/pp4-logouthtml-validator.png)
 
 </details>
+
+* Many htmls files were imported from different sources to allow the website to work but were never touched so those haven't been validated. However the login, logout and signup were altered so those have been validated above.
 
 ### CSS
 * No errors or warnings were found through the W3C CSS validator and I was given the code for this icon to prove this.
@@ -192,6 +179,7 @@ When a user has left a comment they are given an alert to notify them.
 
 ### Python
 * Only models.py and settings didn't pass testing because the length of the lines of code had too many characters but there isn't a way to shorten them.
+
 <details>
 <summary>Python Validation</summary>
 
@@ -205,18 +193,6 @@ When a user has left a comment they are given an alert to notify them.
 ![Views Validation](static/python-validation/pp4-viewspy-validation.png)
 
 </details>
-
-## Accessibility Testing
-This is a screenshot taken from doing an accessibility test on Developer Tools Lighthouse.
-
-![Screenshot](/assets/screenshots/accessibility-screenshot.png)
-
-* W3C HTML Validator - For cleaning and correcting HTML code.
-* CSS Validator - For cleaning and correcting CSS code.
-* JSHint - For cleaning and correcting Javascript code.
-* Google Chrome Dev Tools - Used for Lighthouse to check and improve the website's accessability.
-* WCAG Contrast Checker - For choosing accessible colours.
-* Grammerly - For checking spelling and grammer.
 
 ## Manual Testing
 I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
@@ -240,7 +216,11 @@ Another user asked for a way to restart the quiz at any time while they're going
 * A way to contact the site owner if they discover a bug - added a footer with relevant contact information.
 
 ## Known Bugs
-When creating an option to be used the code will ask you for it twice. This doesn't happen if exit is used the first time the user is asked but if it is used when prompted the second time it will add this to the list. Using exit the first time won't add it to the list. I couldn't figure out why this problem happened.
+* The card text for card posts never stops extending until it has displayed all of its text. I tried a few ways to prevent this would usually end with the text being hidden but the page staying the same length so the user would scroll down a long blank section.
+
+* The footer doesn't remain at the bottom of the webpage depending on which page your on. This is very noticable on the signup, login and logout pages.
+
+* When a comment is made part of the page where a user types out a comment will adjust to the minimum width of the comments for some reason. I noticed this when a very small comment of a single word is made.
 
 # Deployment
 This app was deployed using Heroku.
