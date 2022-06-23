@@ -24,7 +24,7 @@
                 <li>
                     <a href="{% url 'home' %}">Home</a>
                 </li>
-                {% if user.is_authorised %}
+                {% if user.is_superuser %}
                 <li>
                     <a href="admin/blog/post/add/">Make a Post</a>
                 </li>
