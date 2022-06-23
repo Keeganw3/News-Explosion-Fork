@@ -99,9 +99,11 @@ footer {
 }
 
 /* media queries */
-@media screen and (min-width=576) {
+@media screen and (max-width=576) {
     .card-title{
-        font-size: 50%;
+        font-size: 1.5rem;
+        width: 30%;
+        color: red;
     }
 
     .card-text{

@@ -26,6 +26,9 @@
                 </li>
                 {% if user.is_authenticated %}
                 <li>
+                    <a href="admin/blog/post/add/">Make a Post</a>
+                </li>
+                <li>
                     <a href="{% url 'account_logout' %}">Sign-out</a>
                 </li>
                 {% else %}
