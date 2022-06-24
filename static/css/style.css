@@ -100,6 +100,21 @@ footer {
 
 /* media queries */
 
+@media screen and (max-width: 768px) {
+    .card-title{
+        font-size: 100%;
+    }
+
+    .card-text{
+        font-size: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .author {
+        font-size: 100%;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .card-title{
         font-size: 90%;
