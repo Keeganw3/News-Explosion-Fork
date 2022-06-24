@@ -7,11 +7,11 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=500, unique=True)
-    slug = models.SlugField(max_length=500, unique=True)
+    title = models.CharField(max_length=100, unique=True, blank=False)
+    slug = models.SlugField(max_length=100, unique=True, blank=False)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
     updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField()
+    content = models.TextField(max_length=500, blank=False)
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
@@ -32,7 +32,7 @@ class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    body = models.TextField()
+    body = models.TextField(max_length=200, blank=False)
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 
