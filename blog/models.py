@@ -5,13 +5,12 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
-
 class Post(models.Model):
-    title = models.CharField(max_length=100, unique=True, blank=False)
-    slug = models.SlugField(max_length=100, unique=True, blank=False)
+    title = models.CharField(max_length=100, unique=True, blank=False, null=False)
+    slug = models.SlugField(max_length=100, unique=True, blank=False, null=False)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
     updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField(max_length=500, blank=False)
+    content = models.TextField(max_length=500, blank=False, null=False)
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)
     created_on = models.DateTimeField(auto_now_add=True)
@@ -27,12 +26,11 @@ class Post(models.Model):
     def number_of_likes(self):
         return self.likes.count()
 
-
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments")
     name = models.CharField(max_length=100)
     email = models.EmailField()
-    body = models.TextField(max_length=200, blank=False)
+    body = models.TextField(max_length=200, blank=False, null=False)
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
 
