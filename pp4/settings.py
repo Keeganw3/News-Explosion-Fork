@@ -37,7 +37,7 @@ LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -73,8 +73,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pp4.wsgi.application'
 
+DATABASE_URL = os.getenv('DATABASE_URL')
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.config(),
 }
 
 
