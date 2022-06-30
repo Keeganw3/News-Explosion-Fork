@@ -13,10 +13,10 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, 
     related_name="blog_posts")
     updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField(max_length=500, blank=False, 
+    content = models.TextField(max_length=10000, blank=False, 
     null=False, default='Share your story!')
     featured_image = CloudinaryField('image', default='placeholder')
-    excerpt = models.TextField(max_length=100, blank=False, 
+    excerpt = models.TextField(max_length=500, blank=False, 
     null=False, default='Tell us a little bit about your post!')
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
