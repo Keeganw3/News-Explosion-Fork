@@ -10,7 +10,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-ALLOWED_HOSTS = ["pp4-project-ci.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ['news-explosion-fork.herokuapp.com', 'localhost', '127.0.0.1', '*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -41,7 +41,7 @@ DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['https://git.heroku.com/pp4-project-ci.git', 'localhost']
+ALLOWED_HOSTS = ['news-explosion-fork.herokuapp.com', 'localhost']
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
