@@ -211,13 +211,14 @@ When the account registration was made it was tested by going to the registratio
 ### Media Queries
 I tested the media queries by manually adjusting the screen size from roughly 500-1000px to make sure the correct changes were taking place above or below each specific screen size.
 
-This project was designed with mobile first in mind so the only media query that was made was for 576px or less because this is when the text of the card titles for the card posts would start to overlap on one another so the font size was reduced.
-
+This project was designed with mobile first in mind so the media query for 576px decreases the card's title and body text size and on the home page to prevent the card titles from overlapping on top of one another and to visually match the change in text of the card title. This was also done for the media query at 768px for the same reasons.
 
 ## Known Bugs
 * The card text for card posts never stops extending until it has displayed all of its text. I tried a few ways to prevent this would usually end with the text being hidden but the page staying the same length so the user would scroll down a long blank section.
 
-* The footer doesn't remain at the bottom of the webpage depending on which page your on. This is very noticable on the signup, login and logout pages.
+* The hero image doesn't display in heroku.
+
+* The footer doesn't remain at the bottom of the webpage depending on which page the user is on. This is very noticable on the signup, login and logout pages.
 
 * When a comment is made part of the page where a user types out a comment will adjust to the minimum width of the comments for some reason. I noticed this when a very small comment of a single word is made.
 
