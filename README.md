@@ -199,13 +199,19 @@ Admins can make posts on topics they care about or want to share news on. They c
 </details>
 
 ### User Testing
-All issues completed were tested extensively to make sure that they worked as intended. Any bugs not removed are noted on the Bugs Known section below.
+The navbar was tested by clicking each link with each type of user to see if it worked.
 
-The post drafting was tested by logging into the admin page and creating test posts to see the functionality at work amake sure it was showing up on the database.
+The post drafting was tested by logging into the admin page and creating test posts to see the functionality at work to make sure it was showing up on the database.
 
-The administration account was tested by creating another user and making a comment on a post. The didn't show up until I logged in as the admin and approved the post like it was intended. I deleted a comment to ensure this worked too and a post was also made and deleted by an admin to make this functioned correctly.
+Post creation was tested by purposely filling in some sections and leaving others empty to check that the post creater was only allowing posts to be made if they met the correct requirements. 
 
-When the account registration was made it was tested by going to the registration page and filling it out. I added a username, made a password and confirmed it. I knew I was signed in because the navbar changed from Register/Log-in to Logout.
+Comment creation was tested by making several comments across multiple posts to check that this feature was working as intended. It was decided that the user needed a visual que to let them know that their comment had been sent to an admin to be approved because otherwise users would have no way to know if their comment had been made or not.
+
+Posts and comments were viewed with all types of accounts and multiple posts and comments were made using placeholder text and images to make sure all appropriate aspects of the website could be seen by a user.
+
+The administration account was tested by creating another user and making a comment on a post. The comment didn't show up in the comment section until I logged in as an admin and approved the comment like it was intended. I deleted a comment to ensure this worked too and a post was also made and deleted by an admin to make sure this functioned correctly.
+
+When the account registration was made it was tested by going to the registration page and filling it out. I added a username, made a password and confirmed it. I knew I was signed in because the navbar changed from Register/Log-in to Logout. Similarly the admin accounts navbar had been changed to Create a Post and Logout.
 
 ## Manual Testing
 ### Media Queries
