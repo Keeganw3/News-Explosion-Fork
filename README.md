@@ -10,11 +10,13 @@ Admins can make posts on topics they care about or want to share news on. They c
 # Features
 ## Existing Features
 ## Navigation Bar
-* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website and maintains a consistent look on across the website. The navbar contains links to the home, log-in, and registration pages when a user is not logged in. If a user is logged in a link for logging out replaces these links.
+* The navigation bar is provided at the top of the webpage to allow the user to easily explore the website and maintains a consistent look on across the website. The navbar contains links to the home, log-in, and registration pages when a user is not logged in. If a user is logged in a link for logging out replaces these links and if the user is an admin they get the option to create a post.
 
 ![Navbar Logged Out](/static/images/pp4-navbar-screenshot1.png)
 
 ![Navbar Logged In](/static/images/pp4-navbar-screenshot2.png)
+
+![Navbar Logged In(Admin)](/static/images/pp4-navbar-screenshot3.png)
 
 ## Hero Image and Text
 * The hero image has text overlayed on top of it to clearly give the user an immediate idea of the site's purpose.
@@ -25,7 +27,6 @@ Admins can make posts on topics they care about or want to share news on. They c
 * Posts are displayed to the user underneath the hero image in cards. These cards show the post's hero image, the headline, the author, and the text in the post. This lets the user quickly decide whether or not this is a post they would like to click on.
 
 ![Card Posts](/static/images/pp4-card-post-screenshot.png)
-
 
 ## Post's Stories
 * When a user clicks on a card post they are sent to a page with the hero image and headline at the top and the body of text about the post below with the author similar to the card post. An admin must approve a post in order for it to appear on the website.
@@ -41,6 +42,11 @@ Admins can make posts on topics they care about or want to share news on. They c
 * When a user has left a comment they are given an alert to notify them.
 
 ![Comment's Alert](static/images/pp4-comment-alert.png)
+
+## Post Creater
+* This page allows admins to upload posts to the website which requires a title, the post's text and an excerpt. (The slug can be made by the user otherwise it will be automatically generated.)
+
+![Post Creater](static/images/pp4-post-creation.png)
 
 ## Account Registration
 ### Registration Page
