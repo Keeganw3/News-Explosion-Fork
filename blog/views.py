@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
-from .models import Post
+from .models import Post, SocialMediaPlatform
 from .forms import CommentForm
 
 
@@ -52,3 +52,9 @@ class PostDetail(View):
                 "left_comment": True
             },
         )
+
+# def social_media_base_view(request):
+#     smbase = SocialMediaPlatform.objects.all()
+#     context['smbase'] = smbase
+
+#     return render('request', 'templates/base.html', context)

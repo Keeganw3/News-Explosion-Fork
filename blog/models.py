@@ -47,3 +47,20 @@ class Comment(models.Model):
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
 
+class SocialMediaPlatform(models.Model):
+    name = models.CharField(max_length=50, blank=True, null=True)
+    font_awesome_class = models.CharField(max_length=50, blank=True, null=True)
+    # Everything in the url before the user handle
+    # e.g. https://instagram.com/ or tiktok.com/@
+    base_url = models.CharField(max_length=50, blank=True, null=True, 
+    default='https://instagram.com/ or https://tiktok.com/@')
+
+    def __str__(self):
+        return self.base_url
+
+# class SocialMediaPage(models.Model):
+#    platform = models.ForeignKey(base_url)
+#    platform = models.ForeignKey(SocialMediaPlatform.objects.get(self))
+    # e.g. barrack.obama
+#    handle = models.CharField(max_length=50, blank=True, null=True)
+#    last_updated = models.DateTimeField(auto_now=True)
