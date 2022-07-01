@@ -53,8 +53,9 @@ class PostDetail(View):
             },
         )
 
-# def social_media_base_view(request):
-#     smbase = SocialMediaPlatform.objects.all()
-#     context['smbase'] = smbase
+def social_media_base_view(request):
+    context = {}
+    smbase = SocialMediaPlatform.objects.all()
+    context['smbase'] = smbase
 
-#     return render('request', 'templates/base.html', context)
+    return render(request, 'index.html', context)

@@ -25,10 +25,10 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(approved=True)
 
 
-admin.site.register(SocialMediaPlatform)
-# class SocialPlatformAdmin(admin.ModelAdmin):
+@admin.register(SocialMediaPlatform)
+class SocialPlatformAdmin(admin.ModelAdmin):
 
-#     list_display = ('name', 'font_awesome_class', 'base_url')
+    list_display = ('name', 'font_awesome_class', 'base_url')
 #     search_fields = ('name', 'font_awesome_class', 'base_url')
 #     prepopulated_fields = {'base_url': ('name',)}
 
