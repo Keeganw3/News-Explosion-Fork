@@ -37,7 +37,7 @@ LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -75,7 +75,10 @@ WSGI_APPLICATION = 'pp4.wsgi.application'
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 DATABASES = {
-    'default': dj_database_url.config(),
+       'default': {
+   'ENGINE': 'django.db.backends.sqlite3',
+   'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+ }
 }
 
 

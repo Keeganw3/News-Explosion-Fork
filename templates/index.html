@@ -46,10 +46,3 @@
 </div>
 {% csrf_token %}
 {% endblock %}
-<p>{{ SocialMediaPlatform.name.url }}</p>
-{% for smlink in smbase %}
-    {% include 'templates/snippet.html' with value=smlink %}
-    <a href="{{ smlink.SocialMediaPlatform.name }}{{ smlink.SocialMediaPlatform.handle }}">
-        <i class="{{ smlink.SocialMediaPlatform.font_awesome_class }}">
-    </a>
-{% endfor %}

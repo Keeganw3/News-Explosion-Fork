@@ -3,7 +3,6 @@ from django.views import generic, View
 from .models import Post, SocialMediaPlatform
 from .forms import CommentForm
 
-
 class PostList(generic.ListView):
     template_name = 'index.html'
     model = Post
@@ -53,9 +52,14 @@ class PostDetail(View):
             },
         )
 
+class MyListView(generic.ListView):
+    model = SocialMediaPlatform
+    template_name = 'base.html'
+
+
 def social_media_base_view(request):
     context = {}
     smbase = SocialMediaPlatform.objects.all()
     context['smbase'] = smbase
 
-    return render(request, 'index.html', context)
+    return render(request, 'base.html', smbase)
