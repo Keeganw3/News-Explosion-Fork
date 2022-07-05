@@ -55,9 +55,6 @@ class SocialMediaPlatform(models.Model):
     base_url = models.CharField(max_length=50, blank=True, null=True, 
     default='https://instagram.com/ or https://tiktok.com/@')
 
-    def __str__(self):
-        return self.base_url
-
 # class SocialMediaPage(models.Model):
 #    platform = models.ForeignKey(base_url)
 #    platform = models.ForeignKey(SocialMediaPlatform.objects.get(self))
