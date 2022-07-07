@@ -19,12 +19,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.sites',
+    'django.contrib.staticfiles',
+    'django_static_fontawesome',
+
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    
     'cloudinary_storage',
-    'django.contrib.staticfiles',
     'cloudinary',
+
     'django_summernote',
     'crispy_forms',
     'blog',
@@ -66,6 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'blog.views.social_media_base_view'
             ],
         },
     },

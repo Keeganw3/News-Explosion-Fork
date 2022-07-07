@@ -13,7 +13,7 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.min.css' %}" />
     <title>Internet Stories</title>
 
 </head>
@@ -52,10 +52,10 @@
 
     <footer class="footer">
         <p class="ft-text">Reach out to us at:</p>
-        {{ smbase }}
         {% for smlink in smbase %}
-            <a href="{{ smlink.SocialMediaPlatform_object }}">
-                <i class="{{ smlink.font_awesome_class }}">
+            <a href="{{ smlink.name }}" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in a new tab)">
+            <i class="{{ smlink.font_awesome_class }}"></i>
+            {{ smlink.name }}
             </a>
         {% endfor %}
         <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new tab)" class="ft-links"><i class="fa-brands fa-twitter-square"></i></a>

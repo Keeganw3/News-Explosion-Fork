@@ -56,8 +56,7 @@ class PostDetail(View):
 
 def social_media_base_view(request):
     smbase = SocialMediaPlatform.objects.all()
-    print('1')
-    print(smbase)
-    return render(request, 'templates/base.html',  {
+    context = {
         'smbase': smbase
-    })
+    }
+    return context 
